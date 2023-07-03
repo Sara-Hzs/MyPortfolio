@@ -1,0 +1,132 @@
+body {
+    background-color: #f5f5f5;
+    background-image: 
+      linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%),
+      linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 76%, transparent 77%);
+      background-size: 60px 60px;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+  }
+  
+    
+  .container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+  }
+  
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ccc; 
+  }
+  
+  li:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  /* Media Queries */
+
+@media screen and (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  li {
+    margin: 0 15px; 
+    padding-right: 15px; 
+  }
+
+  a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  li {
+    display: block;
+    margin: 15px 0; 
+    padding-right: 0;
+    border-right: none; 
+  }
+
+  a {
+    font-size: 16px;
+  }
+}
+
+table {
+  margin-top: 90px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid black;
+  padding: 15px; 
+  text-align: center;
+}
+
+table td img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table td a {
+  display: block;
+  color: #333;
+  border-bottom: 1px solid black;
+}
+
+p {
+  font-size: larger;
+}
+
+@media screen and (min-width: 768px) {
+  table td {
+    width: 33.33%;
+    padding: 15px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table td {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px; 
+  }
+}
